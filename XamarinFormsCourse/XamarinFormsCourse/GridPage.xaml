@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsCourse.GridPage" Padding="20, 20, 20, 20" BackgroundColor="#354242">
+    <Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="1234" FontSize="50" TextColor="White" Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center"></Label>
+        <Button BackgroundColor="White" FontSize="30" Text="1" CornerRadius="30" Grid.Row="1" Grid.Column="0"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="2" CornerRadius="30" Grid.Row="1" Grid.Column="1"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="3" CornerRadius="30" Grid.Row="1" Grid.Column="2"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="4" CornerRadius="30" Grid.Row="2" Grid.Column="0"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="5" CornerRadius="30" Grid.Row="2" Grid.Column="1"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="6" CornerRadius="30" Grid.Row="2" Grid.Column="2"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="7" CornerRadius="30" Grid.Row="3" Grid.Column="0"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="8" CornerRadius="30" Grid.Row="3" Grid.Column="1"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="9" CornerRadius="30" Grid.Row="3" Grid.Column="2"></Button>
+        <Button BackgroundColor="White" FontSize="30" Text="0" CornerRadius="30" Grid.Row="4" Grid.Column="1"></Button>
+        <Button BackgroundColor="#96ca2d" FontSize="30" Text="Dial" CornerRadius="30" Grid.Row="5" Grid.ColumnSpan="3"></Button>
+    </Grid>
+</ContentPage>

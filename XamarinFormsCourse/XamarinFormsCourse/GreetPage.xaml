@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsCourse.GreetPage"
+             >
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On Platform="iOS" Value="0, 20, 0, 0" />
+                <On Platform="Android" Value="10, 0, 10, 0" />
+                <On Platform="UWP" Value="0, 0, 0, 0" />
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference slider}">
+            <Button HorizontalOptions="Center" VerticalOptions="Center" Text="Next Quote" Clicked="Button_Clicked"></Button>
+            <Label  HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Value}"
+                   Opacity="{Binding Value}"></Label>
+            <Slider x:Name="slider" VerticalOptions="Center" HorizontalOptions="Fill" Maximum="46" Minimum="16"></Slider>
+            <Label x:Name="quote" HorizontalOptions="Center" VerticalOptions="Center" FontSize="{Binding Value}" Text=""></Label>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
