@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black"  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XamarinFormsCourse.ImagePage"
+             xmlns:local="clr-namespace:XamarinFormsCourse.MarkupExtensions">dd
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ActivityIndicator Color="Wheat" IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}" AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional"></ActivityIndicator>
+            <Image Aspect="Fill" x:Name="image" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="PositionProportional"></Image>
+            <Image Source="{local:EmbeddedImage ResourceId=XamarinFormsCourse.Images.image.jpg}"></Image>
+            <Button ImageSource="clock.png" x:Name="btn">
+                <Button.ImageSource>
+                    <OnPlatform x:TypeArguments="FileImageSource"></OnPlatform>
+                </Button.ImageSource>
+            </Button>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

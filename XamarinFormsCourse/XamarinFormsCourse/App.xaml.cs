@@ -10,7 +10,7 @@ namespace XamarinFormsCourse
         {
             InitializeComponent();
 
-            MainPage = new AbsolutePage();
+            MainPage = new AbsolutePageExercise2();
         }
 
         protected override void OnStart()
